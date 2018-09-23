@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events in your City</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+    <a class="navbar-brand" href="">Интересные события в вашем городе</a>
+  </nav>
+  <div class="container search-wrapper">
+    <div id="search-events" class="card card-body">
+      <h1 class="text-center">Найдите интересные мероприятия прямо сейчас!</h1>
+
+      <div class="form-group">
+        <label for="event-name">Искать по названию или городу (писать на английском языке, напр. Moscow,
+          Saint-Petersburg, Novosibirsk)</label>
+        <input type="text" id="event-name" class="form-control" placeholder="Введите название события или город">
+      </div>
+
+      <div class="form-group">
+        <label for="category">Категория</label>
+        <select class="form-control" id="category"></select>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="mt-5 form-control btn btn-success" id="submitBtn" value="Найти">
+      </div>
+
+    </div>
+    <div id="result" class="row mt-5"></div>
+  </div>
+
+  <footer class="mt-5 p-3 text-center bg-primary">
+    Интересные события в вашем городе &copy;
+  </footer>
+
+  <script src="js/eventbrite.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+  <style>
+    footer {
+      color: white;
+    }
+  </style>
+</body>
+
+</html>
